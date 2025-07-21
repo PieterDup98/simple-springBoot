@@ -40,8 +40,8 @@ class ProductServiceTest {
 
         when(productRepository.findAll()).thenReturn(List.of(p1, p2));
 
-        ProductDto dto1 = new ProductDto(p1.getId(), p1.getName(), p1.getPrice());
-        ProductDto dto2 = new ProductDto(p2.getId(), p2.getName(), p2.getPrice());
+        ProductDto dto1 = new ProductDto(p1.getId(), p1.getName(), null, p1.getPrice());
+        ProductDto dto2 = new ProductDto(p2.getId(), p2.getName(), null, p2.getPrice());
 
         when(productMapper.toDto(any())).thenReturn(dto1).thenReturn(dto2);
 
