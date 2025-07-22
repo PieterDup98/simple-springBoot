@@ -9,7 +9,7 @@ Also look at [simple-quarkus](https://github.com/PieterDup98/simple-quarkus) as 
 
 Run Spring Boot in development mode (if spring-boot-devtools is on the classpath.)
 ```shell
-mvn spring-boot:dev
+mvn spring-boot:run
 ```
 
 Run jar with
